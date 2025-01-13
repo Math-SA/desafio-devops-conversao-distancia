@@ -1,0 +1,1 @@
+df204b82bb4d   conversao-distancia:v1_dev   "gunicorn --bind 0.0…"   5 minutes ago   Up 5 minutes   0.0.0.0:5000->5000/tcp, :::5000->5000/tcp   distracted_cori
