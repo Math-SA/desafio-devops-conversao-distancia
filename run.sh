@@ -1,9 +1,8 @@
 #! /bin/bash
-if ! docker image ls| cut --delimiter " " --fields 1-4 | grep "conversao-distancia   v1_dev" ; then
-    docker build -t conversao-distancia:v1_dev .
-fi
 
-porta_5000=$(docker container ls | cut -s --delimiter " " --fields 1,22 | grep "0.0.0.0:5000->")
+docker build -t conversao-distancia:v1_dev .
+
+porta_5000=$(docker container ls | cut -s --delimiter " " --fields 1,22-30 | grep "0.0.0.0:5000->")
 if [[ -n $porta_5000 ]] ; then
     container=$(echo "$porta_5000" | cut -s --delimiter " " --fields 1)
     echo "Container $container utilizando a porta 5000. Terminando execução em 5 segundos. Ctrl+C para cancelar."
