@@ -9,7 +9,7 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY . /app/
 EXPOSE 5000
-ENTRYPOINT ["gunicorn", "--bind", "0.0.0.0:5000","app:app"]
+ENTRYPOINT ["gunicorn","--worker-tmp-dir", "/dev/shm", "--bind", "0.0.0.0:5000","app:app"]
 HEALTHCHECK --interval=30s \
             --timeout=10s \
             --start-period=5s \
