@@ -3,7 +3,8 @@ WORKDIR /app
 RUN apt-get update && \
     apt-get install -y \
     --no-install-recommends\
-    curl
+    curl=7.88.1-10+deb12u8 && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY . /app/
