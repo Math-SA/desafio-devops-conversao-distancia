@@ -16,3 +16,4 @@ Arquivo criado seguindo a aula e script para os passos realizados<br/>
 Ajustes seguindo guia de melhores práticas: [testdriven.io - Docker Best Practices for Python Developers](https://testdriven.io/blog/docker-best-practices/)
 ### [kubernetes](https://github.com/Math-SA/desafio-devops-conversao-distancia/tree/kubernetes)
 Criação de deployment.yaml seguindo aula e depois aplicação de técnicas aprendidas no curso [Introduction to Containers w/ Docker, Kubernetes & OpenShift da IBM no coursera](https://www.coursera.org/learn/ibm-containers-docker-kubernetes-openshift) <br/> 
+#### Após realizar ajustes nos arquivos yaml, executar `kubectl apply -f k8s/deployment.yaml` para aplicar e `kubectl create -f k8s/hpa.yaml` para criar o [autoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale)
