@@ -14,4 +14,5 @@ Script run.sh criado para build e run. <br/>
 Arquivo criado seguindo a aula e script para os passos realizados<br/>
 ### [melhores_praticas_1](https://github.com/Math-SA/desafio-devops-conversao-distancia/tree/melhores_praticas_1)
 Ajustes seguindo guia de melhores práticas: [testdriven.io - Docker Best Practices for Python Developers](https://testdriven.io/blog/docker-best-practices/)
-
+### [kubernetes](https://github.com/Math-SA/desafio-devops-conversao-distancia/tree/kubernetes)
+Criação de deployment.yaml seguindo aula e depois aplicação de técnicas aprendidas no curso [Introduction to Containers w/ Docker, Kubernetes & OpenShift da IBM no coursera](https://www.coursera.org/learn/ibm-containers-docker-kubernetes-openshift) <br/> 
