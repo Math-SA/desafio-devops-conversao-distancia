@@ -23,8 +23,8 @@ spec:
         image: mathsa/desafio-devops-2025-conversao-distancia:v1
         resources:
           limits:
-            memory: "256Mi"
-            cpu: "500m"
+            memory: "128Mi"
+            cpu: "200m"
           requests:
             memory: "50Mi"
             cpu: "20m"
