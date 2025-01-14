@@ -27,27 +27,33 @@ def index():
         # Lógica de conversão
         if selecao == '1':  # Metro para Quilômetros
             resultado = valor / 1000
+            origem = f"{valor} m"
             unidade = "quilômetros"
         elif selecao == '2':  # Quilômetros para Metro
             resultado = valor * 1000
+            origem = f"{valor} km"
             unidade = "metros"
         elif selecao == '3':  # Metro para Milhas
             resultado = valor / 1609.34
+            origem = f"{valor} m"
             unidade = "milhas"
         elif selecao == '4':  # Milhas para Metro
             resultado = valor * 1609.34
+            origem = f"{valor} mi"
             unidade = "metros"
         elif selecao == '5':  # Metro para Pés
             resultado = valor * 3.28084
+            origem = f"{valor} m"
             unidade = "pés"
         elif selecao == '6':  # Pés para Metro
             resultado = valor / 3.28084
+            origem = f"{valor} ft"
             unidade = "metros"
         else:
             resultado = "Inválido"
             unidade = ""
 
-        return render_template('index.html', conteudo={'unidade': unidade, 'valor': resultado}, hostname=hostname, ip_address=ip_address)
+        return render_template('index.html', conteudo={'unidade': unidade, 'valor': resultado, 'origem': origem}, hostname=hostname, ip_address=ip_address)
 
 if __name__ == '__main__':
     app.run()
